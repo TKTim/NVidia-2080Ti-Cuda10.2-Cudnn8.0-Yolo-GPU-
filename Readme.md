@@ -1,7 +1,7 @@
 安裝程序
 =
 * [下載driver](#下載driver)
-* [下載CUDA toolkit = CUDA](#下載CUDAtoolkit=CUDA)
+* [下載CUDA toolkit = CUDA](#下載CUDA toolkit = CUDA)
 * [下載Cudnn](#下載Cudnn)
 * [下載YOLO](#下載YOLO)
 * [下載Opencv](#下載Opencv)
