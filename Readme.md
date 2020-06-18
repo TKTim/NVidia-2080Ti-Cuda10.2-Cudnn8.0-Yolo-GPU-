@@ -6,6 +6,9 @@
 * [下載YOLO](#下載YOLO)
 * [下載Opencv](#下載Opencv)
 * [架設最終YOLO](#架設最終YOLO)
+
+
+下載driver
 =
 
 ```
@@ -66,6 +69,7 @@ nvcc -V
 ![img4](https://github.com/TKTim/NVidia-2080Ti-Cuda10.2-Cudnn8.0-Yolo-GPU-/blob/master/Screenshot%20from%202020-06-16%2023-11-34.png)
 
 就代表你成功安裝了
+
 下載Cudnn
 =
 [Come on Baby](https://developer.nvidia.com/rdp/cudnn-download)
