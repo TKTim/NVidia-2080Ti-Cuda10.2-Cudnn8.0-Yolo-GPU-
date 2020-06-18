@@ -1,11 +1,11 @@
 安裝程序
 =
-[下載driver](#下載driver)
-* 下載CUDA toolkit = CUDA
-* 下載Cudnn
-* 下載YOLO
-
-下載driver
+* [下載driver](#下載driver)
+* [下載CUDA toolkit = CUDA](#下載CUDA toolkit = CUDA)
+* [下載Cudnn](#下載Cudnn)
+* [下載YOLO](#下載YOLO)
+* [下載Opencv](#下載Opencv)
+* [架設最終YOLO](#架設最終YOLO)
 =
 
 ```
@@ -80,6 +80,55 @@ dpkg -i libcudnn8_8.0.0.180-1+cuda10.2_amd64.deb
 
 這樣一切就好了
 記得重新開機。
+
+下載YOLO
+=
+```
+git clone https://github.com/pjreddie/darknet
+cd darknet
+make
+```
+就這麼簡單，再來
+```
+wget https://pjreddie.com/media/files/yolov3.weights
+下載預先的權重檔
+```
+測試看看
+```
+./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
+```
+![im](https://github.com/TKTim/NVidia-2080Ti-Cuda10.2-Cudnn8.0-Yolo-GPU-/blob/master/Screenshot%20from%202020-06-18%2020-30-03.png)
+![im](https://github.com/TKTim/NVidia-2080Ti-Cuda10.2-Cudnn8.0-Yolo-GPU-/blob/master/Screenshot%20from%202020-06-18%2020-30-12.png)
+
+### 之後再到 predictions.png 看看你的成果，那麼以上
+### 都是沒有GPU，也沒有OpenCV的，就下來就來教各位吧！
+
+下載Opencv
+=
+
+基本上
+```
+sudo apt-get install libopencv-dev python-opencv
+```
+就夠了，下載後運行
+```
+pkg-config --modversion opencv
+察看OpenCV的版本。
+```
+如果不行，就請看看[這裡](https://wenyuangg.github.io/posts/opencv/opencv-installation.html)
+
+結束後，就來大組裝
+
+架設最終YOLO
+=
+
+```
+# cd /darknet
+#vim Makefile
+```
+#### 將GPU和OPENCV都 =1
+![im](https://github.com/TKTim/NVidia-2080Ti-Cuda10.2-Cudnn8.0-Yolo-GPU-/blob/master/Screenshot%20from%202020-06-18%2020-33-59.png)
+
 
 
 
