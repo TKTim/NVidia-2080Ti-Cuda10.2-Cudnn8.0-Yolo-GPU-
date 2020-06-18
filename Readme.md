@@ -135,6 +135,12 @@ pkg-config --modversion opencv
 #### 將GPU和OPENCV都 =1
 ![im](https://github.com/TKTim/NVidia-2080Ti-Cuda10.2-Cudnn8.0-Yolo-GPU-/blob/master/Screenshot%20from%202020-06-18%2020-33-59.png)
 
+### 最後！！！  
+```
+# make
+```
+### 恭喜你 想大顯身手的話就到 [YOLO官網](https://pjreddie.com/darknet/yolo/) 試試吧
+
 
 
 
