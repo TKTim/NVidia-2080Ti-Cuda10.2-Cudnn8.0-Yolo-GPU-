@@ -6,6 +6,7 @@
 * [下載YOLO](#下載YOLO)
 * [下載Opencv](#下載Opencv)
 * [架設最終YOLO](#架設最終YOLO)
+* [測試影片](#測試影片)
 
 
 下載driver
@@ -140,6 +141,10 @@ pkg-config --modversion opencv
 # make
 ```
 ### 恭喜你 想大顯身手的話就到 [YOLO官網](https://pjreddie.com/darknet/yolo/) 試試吧
+
+測試影片
+=
+[![ScreenShot](/upload/ask/29/W/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=prJ68JSfjH0)
 
 
 
