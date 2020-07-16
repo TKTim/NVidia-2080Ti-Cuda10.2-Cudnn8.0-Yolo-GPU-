@@ -1,4 +1,4 @@
-安裝程序
+YOLO GPU Version 安裝程序
 =
 * [下載driver](#下載driver)
 * [下載CUDA toolkit = CUDA](#下載CUDAtoolkit)
